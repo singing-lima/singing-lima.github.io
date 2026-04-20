@@ -77,7 +77,7 @@ a {
 <link rel="canonical" href="https://singinglima.art">
 </head>
 <body >
-<table width="614" height="2193" border="0" align="center" cellpadding="00" cellspacing="0" background="webcgadm.png" style="background-repeat:no-repeat">
+<table width="614" height="2190" border="0" align="center" cellpadding="00" cellspacing="0" background="webcgadm.png" style="background-repeat:no-repeat">
   <tbody>
   <tr>
       <td height="166" colspan="3" align="left" valign="middle" style="padding-left:29px"><header><h1 style="text-shadow: 1px 1px 2px #AAA;">Clases de Canto en Surco</h1></header></td>
@@ -103,6 +103,15 @@ a {
       <td width="27">&nbsp;</td></nav>
     </tr>
     <tr>
+      <td height="221" colspan="3" align="center" valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="378" id="imgbox" colspan="3" align="center" valign="bottom" style="background-image:url('img01.png')" onClick="img(0);">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="40" colspan="3" align="center" valign="bottom" style="font-size:52px; padding-bottom:4px;"><span id="p1" style="color:#FFF; cursor:pointer" onClick="img(1);">&middot;</span> <span id="p2" style="color:#888; cursor:pointer" onClick="img(2);">&middot;</span></td>
+    </tr>
+    <tr>
       <td colspan="3" align="center" valign="bottom">&nbsp;</td>
     </tr>
     <tr>
@@ -114,5 +123,39 @@ a {
   </tbody>
 </table>
 
+<script>
+var nI = 1;
+function img(n){
+	if (n==0) {
+		switch (nI){
+			case 1:
+				n=2;
+				break;
+			case 2:
+				n=1;
+				break;
+		}
+	}
+	nI=n;
+	var ibox=document.getElementById("imgbox");
+	var p1=document.getElementById("p1");
+	var p2=document.getElementById("p2");
+	
+	switch(n){
+		case 1:
+			p1.style.color = "#FFF";
+			p2.style.color = "#888";
+			ibox.style.backgroundImage = "";
+			setTimeout(() => {ibox.style.backgroundImage = "url('img01.png')";}, 300);
+			break;
+		case 2:
+			p1.style.color = "#888";
+			p2.style.color = "#FFF";
+			ibox.style.backgroundImage = "";
+			setTimeout(() => {ibox.style.backgroundImage = "url('img02.png')";}, 300);
+			break;
+	}
+}
+</script>
 </body>
 </html>
