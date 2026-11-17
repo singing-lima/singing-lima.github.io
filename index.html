@@ -15,7 +15,8 @@
 
 
 <!-- Event snippet for Conversion - Agregar a Whatsapp conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.-->
+<!-- 
 <script>
 function gtag_report_conversion(url) {
   var callback = function () {
@@ -30,7 +31,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
-
+-->
 
 
 <meta charset="utf-8">
@@ -38,15 +39,15 @@ function gtag_report_conversion(url) {
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" sizes="96x96" href="favicon.png" type="image/png">
 <meta name="viewport" content="width=614">
+<link rel="canonical" href="https://singinglima.art">
 <META 
-content="profesores de canto en lima, profesores de canto popular, profesor de canto a domicilio" name=keywords>
+content="profesores de canto en lima, profesores de canto popular, profesor de canto a domicilio" name="keywords">
 
 
 <META 
-content="Sitio web Oficial de las Clases de Canto clásico y popular dictadas por Pablo Miyashiro en Lima-Perú." name=description>
+content="Sitio web Oficial de las Clases de Canto clásico y popular dictadas por Pablo Miyashiro en Lima-Perú." name="description">
 
 <style type="text/css">
-<!--
 body {
 	background-color: #FFF;
 	margin-top: 0px;
@@ -71,9 +72,8 @@ body,td,th {
 a {
 	font-size: 18px;
 }
--->
 </style>
-<link rel="canonical" href="https://singinglima.art">
+
 <style type="text/css">
 a:link {
 	text-decoration: none;
@@ -88,17 +88,16 @@ a:active {
 	text-decoration: none;
 }
 h3 {
-	font-size: 19px;
+	font-size: 18px;
 }
 h2 {
-	font-size: 19px;
-	font-weight:normal;
-	
+	font-size: 18px;
+	font-weight: normal;	
 }
 </style>
 </head>
 <body>
-<table width="614" height="2250" border="0" align="center" cellpadding="0" cellspacing="0" background="webcgadm14.png" style="background-repeat:no-repeat">
+<table width="614" height="2250" border="0" align="center" cellpadding="0" cellspacing="0" style="background-image: url('webcgadm14.png');background-repeat:no-repeat">
   <tbody>
   <tr>
       <td height="132" colspan="3" align="left" valign="middle" style="padding-left:29px; padding-bottom:0px; padding-top:0px"><header><h1 style="line-height:20px; margin-top:34px; text-shadow: 1px 1px 2px #AAA;">Clases de Canto en Surco</h1></header></td>
@@ -108,12 +107,13 @@ h2 {
         <p style="margin-top:30px">¡Hola! Me llamo Pablo Miyashiro, tengo 40 años, soy músico compositor y me dedico a la formación de cantantes.</p>
         <p>La interpretación musical del canto se nutre de la buena técnica que se pueda tener, y junto al desenvolvimiento escénico, deben transmitir la simpatía de un verdadero artista.</p>
         <p>Lo que te ofrezco es una buena enseñanza, aprovechando los puntos acertados de tu voz; además de clases individuales personalizadas (como es normalmente). Todo esto nos permitirá un proceso de aprendizaje acelerado.</p>
-        <p>Por lo general, lo que se enseña en escuelas es el Canto Clásico. No muchos profesores trabajan la colocación de voz para música popular. De igual manera aunque se enseñe canto popular, vamos avanzando también con un repertorio de piezas clásicas de manera progresiva.</p>
+        <p>Por lo general, lo que se enseña en escuelas es el Canto Clásico. No muchos profesores trabajan la colocación de voz para música popular. De igual manera, aunque se enseñe canto popular, vamos avanzando también con un repertorio de piezas clásicas de manera progresiva.</p>
         <p>&nbsp;</p>
-<strong>INFORMACIÓN DE CLASES EN LIMA</strong>
-        
-        
-        <p>          Dirigido a: Jóvenes, adultos y niños a partir de 12 años. Todos pueden mejorar en el canto.<br>
+        <h2><strong>INFORMACIÓN DE CLASES EN LIMA</strong>
+          
+          
+        </h2>
+        <p>Dirigido a: Jóvenes, adultos y niños a partir de 12 años. Todos pueden mejorar en el canto.<br>
           Frecuencia: Regular (1 vez por semana), Intensivo (2 veces por semana).<br>
           Modalidad: Presencial en Surco, A domicilio, Remoto.<br>
           Costo por clase: de 1 hr. -&gt; S/ 70, de 50 minutos -&gt; S/ 60.<br>
@@ -125,33 +125,36 @@ h2 {
         <p>&nbsp;</p>
       </article>
       </section>
+      <nav>
         <table>
-          <tr><nav>
-      <td style="padding-left:0px; padding-right:19px">CONTACTO: Agregue a WhatsApp dando clic en el siguiente bot&oacute;n.</td>
-      <td width="306" align="center" valign="middle" onclick="gtag_report_conversion();location.href='https://wa.me/51913633699'" style="cursor:pointer; border-style:solid; border-color:#222; border-width:3px; border-radius:40px; font-size:30px; letter-spacing:1px; line-height:40px"><strong style="">913633699 <span style="font:Arial;">&gt;</span> <img src="walogo.png" width="40" height="39" style="vertical-align:top" alt=""/></strong></td>
-      </nav>
-    </tr>
-  </table>
+          <tr>
+      		<td style="padding-left:0px; padding-right:19px">CONTACTO: Agregue a WhatsApp dando clic en el siguiente bot&oacute;n.</td>
+            <!-- PUEDE FALLARgtag_report_conversion();location.href='https://wa.me/51913633699' -->
+      		<td width="306" align="center" valign="middle" onclick="location.href='https://wa.me/51913633699';" style="cursor:pointer; border-style:solid; border-color:#222; border-width:3px; border-radius:40px; font-size:30px; letter-spacing:1px; line-height:40px"><strong style="">913633699 <span style="font-family: Arial, sans-serif;">&gt;</span> <img src="walogo.png" width="40" height="39" style="vertical-align:top" alt="WhatsApp"/></strong></td>
+      
+    	</tr>
+  	  </table>
+  </nav>
     </td>
     </tr>
     
     <tr>
-      <td colspan="3" align="center" valign="bottom">&nbsp;</td>
+      <td align="center" valign="bottom">&nbsp;</td>
     </tr>
     <tr>
-      <td height="378" id="imgbox" colspan="3" align="center" valign="bottom" style="background-image:url('img01.png')" ontouchend="img(0);"></td>
+      <td height="378" id="imgbox" align="center" valign="bottom" style="background-image:url('img01.png')" ontouchend="img(0);"></td>
     </tr>
     <tr>
-      <td height="40" colspan="3" align="center" valign="bottom" style="font-size:52px; padding-bottom:4px; user-select: none;"><span id="p1" style="color:#FFF; cursor:pointer" onClick="img(1);">&middot;</span> <span id="p2" style="color:#888; cursor:pointer" onClick="img(2);">&middot;</span></td>
+      <td height="40" align="center" valign="bottom" style="font-size:52px; padding-bottom:4px; user-select: none;"><span id="p1" style="color:#FFF; cursor:pointer" onClick="img(1);">&middot;</span> <span id="p2" style="color:#888; cursor:pointer" onClick="img(2);">&middot;</span></td>
     </tr>
     <tr>
-      <td height="416" colspan="3" align="center" valign="bottom"><a href="fa.html" style="font-size:19px; color:#999"><u>Ver secci&oacute;n de preguntas frecuentes</u></a></td>
+      <td height="416" align="center" valign="bottom"><a href="fa.html" style="font-size:19px; color:#999"><u>Ver secci&oacute;n de preguntas frecuentes</u></a></td>
     </tr>
     <tr>
-      <td height="93" colspan="3" align="center" valign="bottom" style="font-size: 15px; color: #FFF; padding-left:29px; padding-right:29px"><footer>NOTA: No siempre va a encontar este anuncio en Google por lo que le puede ser &uacute;til apuntar la direcci&oacute;n de este sitio (singinglima.art).</footer></td>
+      <td height="93" align="center" valign="bottom" style="font-size: 15px; color: #FFF; padding-left:29px; padding-right:29px"><footer>NOTA: No siempre va a encontrar este anuncio en Google por lo que le puede ser &uacute;til apuntar la direcci&oacute;n de este sitio (singinglima.art).</footer></td>
     </tr>
     <tr>
-      <td height="82" colspan="3" style="padding-left:20px"><a href="ubicacion.html" style="color:#999; font-size:17px"><img src="Ubicac-icono.png" alt="Ubicación"></a></td>
+      <td height="82" style="padding-left:20px"><a href="ubicacion.html" style="color:#999; font-size:17px"><img src="Ubicac-icono.png" alt="Ubicación"></a></td>
     </tr>
   </tbody>
 </table>
